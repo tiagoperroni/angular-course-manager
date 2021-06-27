@@ -30,8 +30,10 @@
             <td>{{course.releaseDate | date: 'dd/MM/yyy'}}</td>
             <td>
                 <app-star [rating]="course.rating"></app-star>
+                <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary mr-2">Edit</a>
             </td>
         </tr>
+    
     </tbody>
 
 </table>
